@@ -33,7 +33,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .and()
                 //开启记住密码
-                .rememberMe();
+                .rememberMe()
+                .rememberMeParameter("_spring_security_remember_me");
     }
 
     @Autowired
